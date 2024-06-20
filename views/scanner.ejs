@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scannerCusumize.css">
+    <title>Lung Cancer Prediction</title>
+</head>
+<body>
+
+    <h1>Upload Lung X-ray Image for Cancer Prediction</h1>
+    <form id="upload-form" action="/scanner" method="post">
+
+        <input type="file" name="file" id="file" accept="image/*" required>
+        <button type="submit">Upload</button>
+
+    </form>
+    <div id="results"></div>
+
+    <script>
+        document.getElementById("upload-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const fileInput = document.getElementById("file");
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "<p>Loading...</p>";
+
+            try {
+                const response = await fetch("https://fastapi-lung-cancer.onrender.com/docs#/default/predict_image_predict_post", {
+                    method: "POST",
+                    body: formData,
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Server error: ${response.statusText}`);
+                }
+
+                const result = await response.json();
+                resultsDiv.innerHTML = `<h2>Prediction Result:</h2><p>${result.prediction}</p>`;
+            } catch (error) {
+                resultsDiv.innerHTML = <p>Error: ${error.message}</p>;
+            }
+        });
+    </script>
+
+</body>
+</html>

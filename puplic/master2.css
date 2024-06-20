@@ -1,0 +1,788 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: sans-serif;
+
+}
+
+
+.container:first-child{
+  background: #72C0F5;
+}
+
+.container{
+  padding: 0px 30px;
+  overflow: hidden;
+}
+
+
+/* start ling cancer logo */
+
+.container > .lungCancerLogo{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+
+.container > .lungCancerLogo > .text{
+  font-style: italic;
+  width: 30%;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > .lungCancerLogo > .text > h1{
+  font-size: 5vw;
+  text-shadow: -3px 1px 33.44px #000000;
+}
+
+
+.container > .lungCancerLogo > .image{
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  border: 5px white solid;
+  border-radius: 30px;
+}
+
+
+.container > .lungCancerLogo > .image > img{
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* end ling cancer logo */
+
+
+
+/* start feature */
+
+.container>.feature{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  margin: 20px 0px;
+}
+
+
+.container>.feature>div{
+  width: calc((100% - 50px) / 3 );
+  padding: 15px;
+  box-shadow: 0px 0px 8px 0px #b1b1b1;
+  border: 2px transparent solid;
+}
+
+
+@media (max-width:600px){
+  .container>.feature>div{
+      width: calc((100% - 50px) / 2 );
+  }
+  .container>.feature>div:nth-child(-n+4){
+      margin-bottom: 20px;
+  }
+}
+
+.container>.feature>div:hover{
+  border: 2px #358dc8 solid;
+}
+
+.container>.feature>div>a{
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+
+.container>.feature>div:nth-child(2){
+  background-color: #72C0F5;
+}
+
+.container>.feature>div:nth-child(-n+3){
+  margin-bottom: 20px;
+}
+
+
+.container>.feature>div>a>img{
+  width: 40px;
+  position: relative;
+}
+
+
+.container>.feature>div>a>p{
+  color: #72C0F5;
+  position: relative;
+  margin-top: 30px;
+}
+
+.container>.feature>div:nth-child(2)>a>p{
+  color: white;
+}
+
+.container>.feature>div>a>p::before{
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color:#72C0F5;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+}
+
+.container>.feature>div:nth-child(2)>a>p::before{
+  background-color:white;
+}
+
+/* end feature */
+
+
+/* start about us */
+
+.container:nth-child(3){
+  background-color: #72C0F5;
+  display: flex;
+  padding: 30px 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 10vw 0px 10vw;
+}
+
+.container>.aboutUsText{
+  flex-basis: 70vw;
+  color: white;
+}
+
+.container>.aboutUsText>h2{
+  font-size: 2em;
+  margin-bottom: 20px;
+
+}
+
+.container>.aboutUsText>p{
+  font-size: 1.1em;
+}
+
+.container >.aboutUsImage{
+  flex-basis: 30vw;
+}
+
+@media (max-width:600px){
+  .container:nth-child(3){
+      display: flex;
+      flex-flow: column;
+      padding: 30px 20px;
+  }
+}
+
+
+@media (min-width:600px) and (max-width: 768px){
+  .container>.aboutUsText{
+      flex-basis: 60vw;
+      color: white;
+  }
+  
+  .container>.aboutUsText>h2{
+      font-size: 2em;
+      margin-bottom: 20px;
+  
+  }
+  .container>.aboutUsText>p{
+      font-size: 1.1em;
+  }
+  
+.container >.aboutUsImage{
+  flex-basis: 40vw;
+}
+
+}
+
+.container >.aboutUsImage >img{
+  width: 100%;
+}
+
+/* end about us */
+
+
+/* start Symptoms & Causes  */
+.container> #SC{
+  position: relative;
+}
+
+
+
+.container> #SC>.SC1 , .container> #SC>.SC2,.container> #SC>.SC3{
+  margin: 50px 0px;
+  color: #358dc8;
+  background-color: white;
+}
+
+
+.container> #SC>.SC1{
+  display: flex;
+  align-items: center;
+  transition: transform 1s;
+  right: 0px;
+  background-color: #f9f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.container> #SC>.SC1>.arrow{
+  width: 150px;
+}
+.container> #SC>.SC1>.arrow>img{
+  width: 100%;
+}
+
+
+
+.container> #SC>.SC2{
+  transition: transform 1s;
+  display: flex;
+  align-items: center;
+  background-color: #f9f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  transform: translate(110%,0px);
+}
+
+
+.container> #SC>.SC2>.arrow2{
+  width: 100px;
+  transform: rotate(180deg);
+}
+.container> #SC>.SC2>.arrow2>img{
+  width: 100%
+}
+
+
+.container> #SC>.SC2>.arrow3{
+  width: 100px;
+}
+.container> #SC>.SC2>.arrow3>img{
+  width: 100%
+}
+
+
+
+.container> #SC>.SC3{
+  transition: transform 1s;
+  background-color: #f9f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  transform: translate(220%,0px);
+
+}
+
+.container> #SC>.SC3>.arrow4{
+  width: 130px;
+  transform: rotate(180deg);
+
+}
+.container> #SC>.SC3>.arrow4>img{
+  width: 100%
+}
+
+
+.container> #SC>.SC1 >.data> h2,.container> #SC>.SC2 >.data> h2,.container> #SC>.SC3>.data > h2{
+  margin:20px 0px;
+  background-color: #72C0F5;
+  display: inline-block;
+  color: white;
+  padding: 5px;
+  border-radius: 0px 20px 0px 20px;
+  box-shadow: 0px 0px 8px 0px #b1b1b1;
+  font-weight: bold;
+  text-shadow: 0px 0px 8px #262626;
+}
+
+
+.container> #SC>.SC2 >.data> p>span{
+
+  color:#005f9f;
+  font-size: larger;
+
+}
+.container> #SC>.SC1 > .data>p,.container> #SC>.SC2 > .data>p,p,.container> #SC>.SC3 >.data> p{
+  margin:10px 20px;
+  font-weight: bold;
+}
+
+.container> #SC>.SC1 > .data>h3,.container> #SC>.SC2 > .data>h3,.container> #SC>.SC3 >.data> .flex>div >h3{
+  margin:15px 20px;
+  font-weight: 700;
+  color: #005f9f;
+}
+
+
+.container> #SC>.SC1 > .data>ol,.container> #SC>.SC2 > .data>ol,.container> #SC>.SC3 >.data> .flex >div >ol,ol{
+  margin:10px 60px;
+  color: #358dc8;
+  font-weight: bold;
+}
+
+
+.container> #SC>.SC3 >.data> h3{
+  margin:15px 20px;
+  font-weight: 700;
+  color: #005f9f;
+}
+
+.container> #SC>.SC3 >.data> .flex{
+  display: flex;
+}
+
+@media (max-width:500px){
+  .container> #SC>.SC2{
+      flex-flow: column;
+  }
+  
+  
+  .container> #SC>.SC2>.arrow2{
+      width: 50px;
+      align-self: flex-start;
+      transform: rotate(180deg);
+  }
+  .container> #SC>.SC2>.arrow2>img{
+      width: 100%
+  }
+  
+  
+  .container> #SC>.SC2>.arrow3{
+      width: 50px;
+      align-self: flex-end;
+
+  }
+  .container> #SC>.SC2>.arrow3>img{
+      width: 100%
+  }
+} 
+
+@media (max-width:500px){
+  .container> #SC>.SC1{
+      flex-flow: column;
+  }
+  
+  .container> #SC>.SC1>.arrow{
+      width: 50px;
+      align-self: flex-end;
+  }
+  .container> #SC>.SC1>.arrow>img{
+      width: 100%;
+  }
+}
+
+
+@media (max-width:500px){
+  .container> #SC>.SC3{
+      flex-flow: column;
+  }
+
+  .container> #SC>.SC3>.arrow4{
+      width: 50px;
+      align-self: flex-start;
+      transform: rotate(180deg);
+  
+  }
+  .container> #SC>.SC3>.arrow4>img{
+      width: 100%
+  }
+  .container> #SC>.SC3 >.data> .flex {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+
+
+
+/* end Symptoms & Causes */
+
+
+
+
+
+/* end startDiagnosis &Treatment */
+
+.container> #DT{
+  margin: 50px 0px;
+  color: #358dc8;
+  position: relative;
+  background-color: white;
+}
+
+
+
+.container> #DT h2{
+  margin:20px 0px;
+  background-color: #72C0F5;
+  display: inline-block;
+  color: white;
+  padding: 5px;
+  border-radius: 0px 20px 0px 20px;
+  box-shadow: 0px 0px 8px 0px #b1b1b1;
+  font-weight: bold;
+  text-shadow: 0px 0px 8px #262626;
+}
+
+
+.container> #DT > .DT1>.data>.testHealthyPeople {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.container> #DT > .DT1 {
+  background-color: #f9f8f8;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: transform 1s;
+
+}
+
+
+
+
+.container> #DT > .DT1>.data>.testHealthyPeople >.testText{
+  flex-basis: 80vw;
+}
+.container> #DT > .DT1>.data>.testHealthyPeople >.testImage{
+  flex-basis: 20vw;
+}
+
+.container> #DT > .DT1>.data>.testHealthyPeople >.testImage>img{
+  width: 60%;
+}
+
+
+
+@media (max-width:400px){
+  .container> #DT > .DT1>.data>.testHealthyPeople{
+      flex-flow: column;
+  }
+  .container> #DT > .DT1>.data>.testHealthyPeople >.testText{
+      flex-basis: 70vw;
+  }
+  .container> #DT > .DT1>.data>.testHealthyPeople >.testImage{
+      flex-basis: 30vw;
+      text-align: center;
+  }
+}
+
+@media (min-width:400px) and (max-width: 768px){
+  .container> #DT > .DT1>.data>.testHealthyPeople{
+      flex-flow: column;
+  }
+  .container> #DT > .DT1>.data>.testHealthyPeople >.testText{
+      flex-basis: 0;
+  }
+  
+
+  .container> #DT> .DT1 >.data>.testHealthyPeople >.testImage{
+      width: 40vw;
+  }
+
+}
+
+
+
+.container> #DT  h3{
+  margin:15px 20px;
+  font-weight: 700;
+  color: #005f9f;
+  
+}
+
+.container> #DT > .DT1>.data>.testHealthyPeople >.testText> p{
+  margin:10px 20px;
+  font-weight: bold;
+}
+
+.container> #DT > .DT1>.data> dl{
+  margin:10px 40px;
+  font-weight: bold;
+}
+
+.container> #DT > .DT1> .data>dl>dt{
+  color: #005f9f;
+  margin: 10px 0px;
+}
+
+.container> #DT > .DT1> .data>dl>dd{
+  margin: 0px 20px;
+}
+
+
+
+.container> #DT > .DT1 >.arrow5{
+  width: 250px;
+}
+
+.container> #DT > .DT1 >.arrow5 > img{
+  width: 100%;
+}
+
+
+
+
+
+@media (max-width:500px){
+  .container> #DT > .DT1{
+      flex-flow: column;
+  }
+  
+.container> #DT > .DT1 >.arrow5{
+  width: 50px;
+  align-self: flex-end;
+}
+
+} 
+
+
+
+
+.container> #DT > .DT2{
+  display: flex;
+  background-color:#f9f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(110%,0px);
+  transition: transform 1s;
+
+}
+
+.container> #DT > .DT2 .data{
+  display: flex;
+  background-color:#f9f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  flex-flow: column;
+}
+
+.container> #DT > .DT2 .data h2{
+align-self: flex-start;
+}
+
+.container> #DT > .DT2 span{
+  color: #005f9f;
+  font-size: larger;
+  display: block;
+}
+
+
+.container> #DT > .DT2 p:last-child{
+  width: 65%;
+  align-self: flex-end;
+  border: #005f9f dashed 3px;
+  padding: 10px;
+  border-radius: 25px 15px 80px 15px;
+}
+
+.container> #DT > .DT2 .arrow6{
+  width: 200px;
+  transform: rotate(180deg);
+}
+.container> #DT > .DT2 .arrow6 > img{
+  width: 100%;
+
+}
+.container> #DT > .DT2 .arrow7{
+  width: 200px;
+  
+}
+.container> #DT > .DT2 .arrow7 > img{
+  width: 100%;
+}
+
+
+@media (max-width:500px){
+  .container> #DT > .DT2{
+      flex-flow: column;
+  }
+
+  .container> #DT > .DT2 p:last-child{
+      width: 90%;
+  }
+  
+  .container> #DT > .DT2 .arrow6{
+      width: 50px;
+      align-self: flex-start;
+  }
+  .container> #DT > .DT2 .arrow7{
+      width: 50px;
+      align-self: flex-end;
+  }
+} 
+
+
+.container> #DT > .DT3{
+  display: flex;
+  align-items: center;
+  background-color: #f9f8f8;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(220%,0px);
+  transition: transform 1s;
+
+}
+
+.container> #DT > .DT3 span{
+  color: #005f9f;
+  font-size: larger;
+  display: block;
+}
+
+.container> #DT > .DT3 .arrow8{
+  width: 100px;
+  transform: rotate(180deg);
+
+}
+
+.container> #DT > .DT3 .arrow8 > img{
+  width: 100%;
+}
+
+
+
+@media (max-width:500px){
+  .container> #DT > .DT3{
+      flex-direction: column;
+  }
+
+  .container> #DT > .DT3 .arrow8{
+      width: 50px;
+      align-self: flex-start;
+  }
+  
+
+} 
+
+/* end Diagnosis &Treatment */
+
+
+
+
+/* start video */
+
+
+
+
+.container #video > h2{
+      margin:20px 0px;
+      background-color: #72C0F5;
+      display: inline-block;
+      color: white;
+      padding: 5px;
+      border-radius: 0px 20px 0px 20px;
+      box-shadow: 0px 0px 8px 0px #b1b1b1;
+      font-weight: bold;
+      text-shadow: 0px 0px 8px #262626;
+}
+
+
+.container #video>.video {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+
+.container #video>.video > iframe{
+  margin-bottom: 20px;
+  background-color: #eee;
+  width: calc((100% - 20px) / 2);
+  border-radius: 20px;
+}
+
+@media (max-width:500px){
+  .container #video>.video {
+      justify-content: center;
+  }
+  
+  .container #video>.video > iframe{
+      width: calc((100% - 20px) ) ;
+  }
+} 
+
+/* end video */
+
+
+/* start hospital */
+
+
+
+
+.container #HC > h2{
+  margin:20px 0px;
+  background-color: #72C0F5;
+  display: inline-block;
+  color: white;
+  padding: 5px;
+  border-radius: 0px 20px 0px 20px;
+  box-shadow: 0px 0px 8px 0px #b1b1b1;
+  font-weight: bold;
+  text-shadow: 0px 0px 8px #262626;
+}
+
+.container> #HC > ol{
+  margin:20px 40px 50px;
+  color: #358dc8;
+  font-weight: bold;
+  display: flex;
+  flex-flow: row wrap;
+  list-style-position: inside;
+}
+
+.container> #HC > ol >li{
+  width: calc((100% - 40px) / 2);
+  margin: 10px;
+  text-decoration: underline;
+  font-weight: 900;
+  color: #005f9f;
+}
+
+.container> #HC > ol >li>a{
+  text-decoration: none;
+  color: #005f9f;
+}
+
+
+@media (max-width:500px){
+  .container> #HC > ol{
+      margin:20px 0px 50px;
+  }
+  .container> #HC > ol >li{
+      width: calc((100% - 40px) );
+  }
+} 
+
+/* end hospital */

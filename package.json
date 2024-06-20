@@ -1,0 +1,37 @@
+{
+  "name": "new-folder2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon -r esm app/index.js",
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "20.10.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.20.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.2.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "esm": "^3.2.25",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "moment": "^2.30.1",
+    "mongoose": "^8.3.2",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.4"
+  },
+  "compilerOptions": {},
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
+}
